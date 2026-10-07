@@ -25,7 +25,6 @@ async function carregarDados() {
     // Foto de perfil
     if (data.foto_perfil) {
       const foto = $("foto-perfil");
-
       if (foto) {
         foto.src = data.foto_perfil;
       }

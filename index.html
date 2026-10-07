@@ -1,109 +1,62 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendamento de Aulas</title>
 
-  <title>Agendamento de Aulas</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-  <link rel="stylesheet" href="style.css">
-</head>
+  <body>
+    <main class="card">
+      <header>
+        <img id="foto-perfil" src="" alt="Foto do professor" />
 
-<body>
+        <h1 id="titulo-empresa">Carregando...</h1>
 
-  <main class="card">
+        <p id="descricao-empresa"></p>
+      </header>
 
-    <header>
-      <img
-        id="foto-perfil"
-        src=""
-        alt="Foto do professor"
-      >
+      <section>
+        <h2>Agende sua Aula</h2>
 
-      <h1 id="titulo-empresa">Carregando...</h1>
+        <form id="agendamento-form">
+          <label for="cliente-nome"> Nome do Aluno </label>
 
-      <p id="descricao-empresa"></p>
-    </header>
+          <input
+            type="text"
+            id="cliente-nome"
+            placeholder="Digite seu nome"
+            required
+          />
 
+          <label for="servicos-select"> Disciplina / Serviço </label>
 
-    <section>
+          <select id="servicos-select" required>
+            <option value="">Selecione uma opção</option>
+          </select>
 
-      <h2>Agende sua Aula</h2>
+          <label for="agendamento-data"> Data </label>
 
-      <form id="agendamento-form">
+          <input type="date" id="agendamento-data" required />
 
-        <label for="cliente-nome">
-          Nome do Aluno
-        </label>
+          <label for="agendamento-hora"> Horário </label>
 
-        <input
-          type="text"
-          id="cliente-nome"
-          placeholder="Digite seu nome"
-          required
-        >
+          <input type="time" id="agendamento-hora" required />
 
+          <button type="submit">📚 Confirmar Agendamento</button>
+        </form>
+      </section>
 
-        <label for="servicos-select">
-          Disciplina / Serviço
-        </label>
+      <footer>
+        <p>Quer tirar dúvidas sobre as aulas?</p>
 
-        <select id="servicos-select" required>
-          <option value="">
-            Selecione uma opção
-          </option>
-        </select>
+        <button type="button" id="btn-whatsapp">💬 Falar pelo WhatsApp</button>
+      </footer>
+    </main>
 
-
-        <label for="agendamento-data">
-          Data
-        </label>
-
-        <input
-          type="date"
-          id="agendamento-data"
-          required
-        >
-
-
-        <label for="agendamento-hora">
-          Horário
-        </label>
-
-        <input
-          type="time"
-          id="agendamento-hora"
-          required
-        >
-
-
-        <button type="submit">
-          📚 Confirmar Agendamento
-        </button>
-
-      </form>
-
-    </section>
-
-
-    <footer>
-
-      <p>
-        Quer tirar dúvidas sobre as aulas?
-      </p>
-
-      <button type="button" id="btn-whatsapp">
-        💬 Falar pelo WhatsApp
-      </button>
-
-    </footer>
-
-  </main>
-
-
-  <script src="script.js"></script>
-
-</body>
-
+    <script src="script.js"></script>
+  </body>
 </html>
