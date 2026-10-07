@@ -1,0 +1,185 @@
+/* ===================================================
+   1. TEMAS DE CORES (Escolha o tema do seu negócio)
+   =================================================== */
+
+/* TEMA PADRÃO: Aulas Particulares / Reforço */
+:root {
+    --cor-principal: #1E3A8A;
+    --cor-secundaria: #0284C7;
+    --cor-fundo: #EFF6FF;
+    --cor-texto: #0F172A;
+}
+
+/* 
+  PARA MUDAR O TEMA, basta substituir o bloco acima por um destes abaixo:
+
+  -- TEMA: Unhas / Esmalteria --
+  :root {
+    --cor-principal: #D81B60;
+    --cor-secundaria: #8E24AA;
+    --cor-fundo: #FCE4EC;
+    --cor-texto: #212121;
+  }
+
+  -- TEMA: Salão / Cabelo --
+  :root {
+    --cor-principal: #1F2937;
+    --cor-secundaria: #D4AF37;
+    --cor-fundo: #F3F4F6;
+    --cor-texto: #111827;
+  }
+
+  -- TEMA: hotdog --
+  :root {
+
+  --cor-principal: #E63946;    /* Cor dos botões e títulos principais 
+  --cor-secundaria: #FFB703;   /* Detalhes e bordas 
+  --cor-fundo: #FFFBEB;        /* Cor de fundo da página 
+  --cor-texto: #2B2D42;        /* Cor do texto principal 
+  }
+*/
+
+/* ===================================================
+   2. RESET E ESTRUTURA GERAL
+   =================================================== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+header {
+  text-align: center;
+}
+
+.perfil-img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%; /* Torna a imagem perfeitamente redonda */
+  object-fit: cover;
+  border: 3px solid var(--cor-principal);
+  margin-bottom: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--cor-fundo);
+  color: var(--cor-texto);
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  min-height: 100vh;
+}
+
+/* ===================================================
+   3. CARD PRINCIPAL
+   =================================================== */
+.card {
+  background: #ffffff;
+  max-width: 480px;
+  width: 100%;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  border-top: 6px solid var(--cor-principal); /* Linha temática no topo */
+}
+
+header h1 {
+  color: var(--cor-principal);
+  font-size: 1.5rem;
+  margin-bottom: 8px;
+}
+
+header p {
+  color: #6b7280;
+  font-size: 0.95rem;
+  margin-bottom: 20px;
+}
+
+/* ===================================================
+   4. FORMULÁRIO DE AGENDAMENTO
+   =================================================== */
+.form-section h2 {
+  font-size: 1.2rem;
+  color: var(--cor-texto);
+  margin-bottom: 12px;
+}
+
+form label {
+  display: block;
+  margin-top: 12px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #374151;
+}
+
+form input, 
+form select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 4px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+form input:focus, 
+form select:focus {
+  border-color: var(--cor-principal);
+}
+
+/* ===================================================
+   5. BOTÕES E AÇÕES
+   =================================================== */
+.btn-agendar {
+  width: 100%;
+  background-color: var(--cor-principal);
+  color: #ffffff;
+  border: none;
+  padding: 12px;
+  margin-top: 18px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: filter 0.2s, transform 0.1s;
+}
+
+.btn-agendar:hover {
+  filter: brightness(0.9);
+}
+
+.btn-agendar:active {
+  transform: scale(0.98);
+}
+
+.footer-actions {
+  margin-top: 25px;
+  border-top: 1px solid #e5e7eb;
+  padding-top: 15px;
+  text-align: center;
+}
+
+.footer-actions p {
+  font-size: 0.9rem;
+  color: #6b7280;
+}
+
+.btn-wpp {
+  background: transparent;
+  color: var(--cor-principal);
+  border: 2px solid var(--cor-principal);
+  padding: 8px 16px;
+  margin-top: 8px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.btn-wpp:hover {
+  background-color: var(--cor-principal);
+  color: #ffffff;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Agendamento de Aulas Particulares</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="card">
+      <header>
+        <img id="foto-perfil" src="" alt="Foto do Professor" class="perfil-img" />
+        <h1 id="titulo-empresa">Carregando...</h1>
+        <p id="descricao-empresa"></p>
+      </header>
+
+      <!-- Formulário de Agendamento -->
+      <section class="form-section">
+        <h2>Agende sua Aula / Mentoria</h2>
+        <form id="agendamento-form">
+          <label for="cliente-nome">Nome do Aluno(a):</label>
+          <input
+            type="text"
+            id="cliente-nome"
+            placeholder="Digite seu nome completo"
+            required
+          />
+
+          <label for="servicos-select">Escolha a Disciplina / Serviço:</label>
+          <select id="servicos-select" required>
+            <option value="">Selecione uma opção...</option>
+          </select>
+
+          <label for="agendamento-data">Data Pretendida:</label>
+          <input type="date" id="agendamento-data" required />
+
+          <label for="agendamento-hora">Horário Pretendido:</label>
+          <input type="time" id="agendamento-hora" required />
+
+          <button type="submit" class="btn-agendar">
+            📚 Confirmar Agendamento via WhatsApp
+          </button>
+        </form>
+      </section>
+
+      <!-- Ação Secundária (Fale Conosco) -->
+      <footer class="footer-actions">
+        <p>Quer tirar dúvidas sobre o conteúdo ou horários?</p>
+        <button type="button" id="btn-whatsapp" class="btn-wpp">
+          💬 Falar com o Professor no WhatsApp
+        </button>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
