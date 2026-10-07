@@ -3,6 +3,8 @@
   "descricao": "Aulas particulares personalizadas, preparação para exames e reforço escolar presencial ou online.",
   "foto_perfil": "imagens/foto_perfil.jpeg",
   "whatsapp": "5532999537062",
+  "sobre": "Texto apresentando o profissional ou negócio, sua experiência e forma de atendimento.",
+  "localizacao": "Endereço ou informação sobre onde o atendimento acontece.",
   "servicos": [
     {
       "id": 1,
